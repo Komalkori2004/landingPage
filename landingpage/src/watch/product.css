@@ -1,0 +1,147 @@
+/* ===============================
+   COLLECTION SECTION
+   =============================== */
+
+.collection-section {
+  background: #000;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.container {
+  max-width: 100%;
+  padding: 18px 22px 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.collection-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #d4af37;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeDown 1s ease;
+}
+
+/* Card Container */
+.collection-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  width: 350px;
+  padding: 22px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: 0.35s ease;
+  box-shadow: 0 16px 40px rgba(212, 175, 55, 0.08);
+  margin-left: 120px;
+}
+
+.collection-section .row {
+  justify-content: center !important;
+}
+
+
+.collection-card:hover {
+  transform: translateY(-8px);
+  border-color: #d4af37;
+  box-shadow: 0 0 22px rgba(212, 175, 55, 0.25);
+}
+
+/* Image Wrapper */
+.collection-img-wrapper {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.04), transparent);
+  padding: 23px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 18px 45px rgba(212, 175, 55, 0.12);
+  margin-bottom: 20px;
+  animation: fadeUp 1.2s ease;
+}
+
+.collection-img {
+  width: 100%;
+  height: 270px;
+  object-fit: contain;
+}
+
+/* Text */
+.collection-name {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.collection-price {
+  margin-top: 6px;
+  color: #d4af37;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Buttons */
+.collection-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn-gold {
+  background: #d4af37;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-gold:hover {
+  background: #b8922b;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+/* Animations (same as your hero section) */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

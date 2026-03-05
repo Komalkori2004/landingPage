@@ -1,0 +1,37 @@
+.closure-section {
+    padding: 90px 20px;
+    background: linear-gradient(120deg, #000, #111);
+}
+
+.closure-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.closure-container img {
+    width: 420px;
+    border-radius: 18px;
+}
+
+.closure-text h2 {
+    color: gold;
+    font-size: 36px;
+}
+
+.closure-text p {
+    color: #ccc;
+    margin: 15px 0;
+}
+
+.closure-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.closure-text li {
+    color: #eee;
+    margin-bottom: 10px;
+}
