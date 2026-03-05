@@ -1,19 +1,21 @@
 /* Header */
-
 header{
-  position: sticky;
+  position:sticky;
   top:0;
   z-index:40;
   background:#0a0a0a;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
   border-bottom:1px solid rgba(255,255,255,0.05);
+  padding:16px 0;
 }
 
-/* Bootstrap container ko break na karo */
+/* container */
+
 .container{
   max-width:1200px;
   margin:auto;
+  padding:0 20px;
 }
 
 /* Navbar */
@@ -23,12 +25,20 @@ header{
   align-items:center;
 }
 
+/* Logo */
+
 .logo{
-  font-size:28px;
-  letter-spacing:4px;
+  font-size:32px;
+  letter-spacing:5px;
   font-weight:700;
   color:#d4af37;
-  animation: fadeDown 1s ease;
+}
+
+/* Nav links */
+
+.navbar ul{
+  display:flex;
+  gap:28px;
 }
 
 .navbar ul li{
@@ -41,8 +51,11 @@ header{
   cursor:pointer;
   transition:0.3s;
   position:relative;
+  font-size:15px;
   font-weight:500;
 }
+
+/* underline animation */
 
 .navbar ul li a::after{
   content:"";
@@ -52,7 +65,7 @@ header{
   width:0%;
   height:2px;
   background:#d4af37;
-  transition:0.3s;
+  transition:.3s;
 }
 
 .navbar ul li a:hover{
@@ -62,6 +75,7 @@ header{
 .navbar ul li a:hover::after{
   width:100%;
 }
+
 
 /* HERO SECTION */
 
@@ -109,12 +123,12 @@ header{
 
 .btn-primary{
   background:#d4af37;
-  text-decoration:none;
+  text-decoration: none;
   color:#111;
-  padding:0.65rem 1.2rem;
+  padding:8px 18px;
   border-radius:8px;
   font-weight:600;
-  transition:0.3s;
+  transition:.3s;
 }
 
 .btn-primary:hover{
@@ -124,13 +138,13 @@ header{
 
 .btn-secondary{
   border:1px solid rgba(255,255,255,0.15);
+  text-decoration: none;
   color:#e5e5e5;
-  text-decoration:none;
-  padding:0.65rem 1.2rem;
+  padding:8px 18px;
   border-radius:8px;
   background:transparent;
   font-weight:500;
-  transition:0.3s;
+  transition:.3s;
 }
 
 .btn-secondary:hover{
@@ -174,14 +188,16 @@ header{
 }
 
 .gold-glow{
-  position:absolute;
-  width:288px;
-  height:288px;
-  border-radius:50%;
-  bottom:-40px;
-  right:-80px;
-  background:rgba(212,175,55,0.09);
-  filter:blur(48px);
+position:absolute;
+width:260px;
+height:260px;
+border-radius:50%;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(212,175,55,0.08);
+filter:blur(70px);
+z-index:-1;
 }
 
 /* Animations */
@@ -223,4 +239,11 @@ header{
   0%{ transform:translateY(0);}
   50%{ transform:translateY(-12px);}
   100%{ transform:translateY(0);}
+}
+[data-aos]{
+pointer-events:none;
+}
+
+[data-aos].aos-animate{
+pointer-events:auto;
 }

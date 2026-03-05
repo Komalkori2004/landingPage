@@ -31,12 +31,11 @@ return (
 
 {/* Title */}
 <div className="text-center mb-5">
-
-<h2 className="collection-title">
+<h2 className="collection-title" data-aos="fade-up">
 Our <span>Collection</span>
 </h2>
 
-<p className="collection-subtitle">
+<p className="collection-subtitle" data-aos="fade-up" data-aos-delay="200">
 Discover our premium Titan watches crafted with precision,
 luxury design, and timeless elegance for every occasion.
 </p>
@@ -48,8 +47,11 @@ luxury design, and timeless elegance for every occasion.
 
 {products.map((p,index)=>(
 <div key={index} className="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-
-<div className="collection-card">
+<div
+className="collection-card"
+data-aos="zoom-in-up"
+data-aos-delay={index * 150}
+>
 
 <div className="collection-img-wrapper">
 <img src={p.img} alt={p.name} className="collection-img"/>

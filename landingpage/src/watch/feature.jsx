@@ -1,54 +1,83 @@
 import "./features.css";
 
 function Features() {
-    const data = [
-        {
-            title: "Sapphire Crystal Glass",
-            desc: "Ultra-scratch-resistant premium sapphire for long-lasting clarity.",
-            icon: "💎",
-        },
-        {
-            title: "5ATM Water Resistant",
-            desc: "Designed to withstand rain, splashes, and daily wear.",
-            icon: "💧",
-        },
-        {
-            title: "Stainless Steel Body",
-            desc: "Precision-crafted 316L steel for durability and elegance.",
-            icon: "⛓️",
-        },
-        {
-            title: "Premium Leather Strap",
-            desc: "Soft, durable, and built for all-day comfort.",
-            icon: "⌚",
-        },
-    ]
 
+const data = [
+{
+title: "Sapphire Crystal Glass",
+desc: "Highly scratch-resistant sapphire crystal ensures long-lasting clarity and premium protection.",
+icon: "💎",
+},
+{
+title: "5ATM Water Resistance",
+desc: "Engineered to resist rain, splashes and daily water exposure for reliable performance.",
+icon: "💧",
+},
+{
+title: "316L Stainless Steel",
+desc: "Premium stainless steel body crafted for durability, elegance and corrosion resistance.",
+icon: "⚙️",
+},
+{
+title: "Luxury Leather Strap",
+desc: "Soft premium leather strap designed for all-day comfort and timeless style.",
+icon: "⌚",
+}
+];
 
+return (
 
-    return (
-        <>
-            <section className="feature">
-                <h2 className="title">
-                    Premium Features</h2>
-                <div className="feature-container">
-                    {
-                        data.map((f, index) => (
-                            <div key={index} className="fea-box">
-                                <div className="feature-icon">{f.icon}</div>
-                                <h3>{f.title}</h3>
-                                <p>{f.desc}</p>
+<section id="features" className="features-section">
 
-                            </div>
-                        ))
-                    }
+<div className="container">
 
-                </div>
+<div className="text-center mb-5">
 
-            </section>
+<h2 className="features-title" data-aos="fade-up">
+Premium <span>Features</span>
+</h2>
+<p className="features-subtitle" data-aos="fade-up" data-aos-delay="200">
+Crafted with precision engineering and premium materials,
+our watches deliver durability, elegance and performance.
+</p>
 
-        </>
-    )
+</div>
+
+<div className="row g-4 justify-content-center">
+
+{data.map((f,index)=>(
+<div key={index} className="col-12 col-sm-6 col-lg-3">
+<div
+className="feature-card"
+data-aos="fade-up"
+data-aos-delay={index * 150}
+>
+
+<div className="feature-icon">
+{f.icon}
+</div>
+
+<h4 className="feature-heading">
+{f.title}
+</h4>
+
+<p className="feature-desc">
+{f.desc}
+</p>
+
+</div>
+
+</div>
+))}
+
+</div>
+
+</div>
+
+</section>
+
+);
+
 }
 
-export default Features
+export default Features;

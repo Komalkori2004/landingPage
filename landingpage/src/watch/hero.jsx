@@ -43,17 +43,17 @@ function Landing() {
       {/* Left Content */}
       <div className="col-md-6 hero-text">
 
-        <h1>
+        <h1 data-aos="fade-right">
           REDEFINE <br />
           TIME WITH <span className="gold">TITAN</span>
         </h1>
 
-        <p>
+       <p data-aos="fade-right" data-aos-delay="200">
           Luxury engineered for precision and crafted for elegance.
           Discover our latest collection — where timeless style meets modern craftsmanship.
         </p>
 
-        <div className="hero-buttons">
+    <div className="hero-buttons" data-aos="fade-up" data-aos-delay="400">
           <a href="#collection" className="btn-primary">Shop Collection</a>
           <a href="#video" className="btn-secondary">Watch Film</a>
         </div>

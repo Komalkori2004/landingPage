@@ -1,6 +1,6 @@
 
 import Landing from './hero'
-// import Features from './feature'
+import Features from './feature'
 import Product from './product'
 // import Table from "./table"
 // import Reviews from "./review"
@@ -13,6 +13,7 @@ const Home=()=>{
     
     
     <Landing></Landing>
+    <Features></Features>
          <Product></Product>
 
     {/* // <Features></Features>

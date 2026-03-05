@@ -172,3 +172,10 @@ border-color:#d4af37;
 color:#d4af37;
 background:rgba(212,175,55,0.08);
 }
+[data-aos]{
+pointer-events:none;
+}
+
+[data-aos].aos-animate{
+pointer-events:auto;
+}
