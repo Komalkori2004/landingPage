@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import "./slider.css";
 
-import Img1 from "./image2/titan-1.webp";
-import Img2 from "./image2/titan-3.webp";
-import Img3 from "./image2/titan-4.webp";
+// import Img1 from "./image2/titan-1.webp";
+// import Img2 from "./image2/titan-3.webp";
+// import Img3 from "./image2/titan-4.webp";
 
 const slides = [
     {

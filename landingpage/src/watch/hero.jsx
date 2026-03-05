@@ -1,81 +1,82 @@
-// import "bootstrap/dist/css/bootstrap.min.css";
 
-// import "aos/dist/aos.css";
-// import AOS from "aos";
-// import { useEffect } from "react";
 
 import "./hero.css";
-import Titan1 from './image2/titan-1.webp'
-
 function Landing() {
-
-
   return (
-
     <>
-
       <header>
-        <div className=" container ">
-          <div className="d-flex align-item-center g-4">
+        <div className="container d-flex justify-content-between align-items-center">
+          <div className="d-flex align-items-center gap-5">
             <div className="logo">TITAN</div>
+
             <nav className="navbar">
-              <ul>
-
-                <li><a href="#">Collection</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Reviews</a></li>
+              <ul className="d-flex gap-4 m-0">
+                <li>
+                  <a href="#collection">Collection</a>
+                </li>
+                <li>
+                  <a href="#features">Features</a>
+                </li>
+                <li>
+                  <a href="#product">Product</a>
+                </li>
+                <li>
+                  <a href="#reviews">Reviews</a>
+                </li>
               </ul>
-
             </nav>
           </div>
 
-
-          <div className="btn">
-            <a href="#shop" className="btn-primary " style={{ borderRadius: "15px", textDecoration: "none" }}>Stores</a>
-            <button className="btn-secondary" style={{ borderRadius: "15px", textDecoration: "none",background:"transparet" }}>Buy Now</button>
-
+          <div className="d-flex gap-3">
+            <a href="#store" className="btn-primary">
+              Stores
+            </a>
+            <button className="btn-secondary">Buy Now</button>
           </div>
         </div>
       </header>
+      
+    <section id="hero" className="hero-section">
+  <div className="container">
+    <div className="row align-items-center">
 
-      <section id="hero" className="hero-section">
-        <div className="hero-container">
+      {/* Left Content */}
+      <div className="col-md-6 hero-text">
 
-          <div className="hero-text">
-            <h1>REDEFINE <br />
-              TIME WITH <span className="gold">TITAN</span></h1>
-            <p>Luxury engineered for precision and crafted for elegance. Discover our latest collection — where timeless style meets modern craftsmanship.</p>
+        <h1>
+          REDEFINE <br />
+          TIME WITH <span className="gold">TITAN</span>
+        </h1>
 
-            <div className="hero-buttons">
-              <a href="#collection" class="btn-primary">Shop Collection</a>
-              <a href="#video" class="btn-secondary">Watch Film</a>
-            </div>
+        <p>
+          Luxury engineered for precision and crafted for elegance.
+          Discover our latest collection — where timeless style meets modern craftsmanship.
+        </p>
 
-            <div className="hero-info">
-              <span>Free worldwide shipping</span>
-              <span>•</span>
-              <span>2-year warranty</span>
-            </div>
-          </div>
-
-
-          <div className="hero-image-wrapper">
-            <div className="hero-image-card">
-              <img src={Titan1} alt="Titan Watch" />
-            </div>
-            <div className="gold-glow"></div>
-          </div>
+        <div className="hero-buttons">
+          <a href="#collection" className="btn-primary">Shop Collection</a>
+          <a href="#video" className="btn-secondary">Watch Film</a>
         </div>
-      </section>
 
+        <div className="hero-info">
+          <span>Free worldwide shipping</span>
+          <span>•</span>
+          <span>2-year warranty</span>
+        </div>
 
+      </div>
 
+      {/* Right Image */}
+      <div className="col-md-6 hero-image-wrapper">
+        <div className="hero-image-card">
+          <img src="/images/titan-1.webp" alt="Titan Watch" />
+        </div>
+        <div className="gold-glow"></div>
+      </div>
 
-
-
-
-
+    </div>
+  </div>
+</section>
     </>
   );
 }
