@@ -1,52 +1,45 @@
-# Titan Watch Landing Page
+## 🚀 Features
 
-A modern and responsive watch product landing page built using React.js and Vite.  
-This project showcases a premium watch collection with a clean UI and elegant layout.
+✨ **Modern Luxury UI**
+A premium watch landing page designed with a sleek black-and-gold theme inspired by luxury brands.
 
-## Features
+🎬 **Smooth Scroll Animations (AOS)**
+Interactive scroll animations using **AOS (Animate On Scroll)** to create a dynamic user experience.
 
-- Responsive landing page design
-- Modern hero section
-- Premium watch features section
-- Product collection section
-- Call-to-action buttons (Buy Now / Shop Collection)
-- Clean and modern UI design
+📱 **Fully Responsive Design**
+Built with **Bootstrap grid system** ensuring the layout adapts perfectly across mobile, tablet, and desktop screens.
 
-## Technologies Used
+🧭 **Sticky Navigation Bar**
+Elegant sticky navbar with smooth hover animations and quick section navigation.
 
-- React.js
-- Vite
-- HTML5
-- CSS3
-- JavaScript
+🛍️ **Product Collection Showcase**
+Stylish product cards with hover effects, product descriptions, and call-to-action buttons.
 
-## Project Sections
+⚙️ **Premium Feature Section**
+Highlights key watch features with modern animated cards and clean UI.
 
-- Navbar
-- Hero Section
-- Premium Features
-- Product Collection
-- Call to Action
+🎨 **Modern UI & UX**
+Carefully designed components with subtle animations, hover effects, and consistent spacing.
 
-## Installation
+⚡ **Optimized Structure**
+Clean React component structure for easy scalability and maintenance.
 
-Clone the repository
+---
 
-git clone https://github.com/Komalkori2004/landingPage.git
+## 🛠️ Tech Stack
 
-Go to project folder
+* **React.js**
+* **Bootstrap**
+* **AOS (Animate On Scroll)**
+* **CSS3**
+* **JavaScript (ES6+)**
 
-cd landingpage
+---
 
-Install dependencies
+## 📂 Project Sections
 
-npm install
-
-Run the project
-
-npm run dev
-
-## Author
-
-Komal Kori  
-MERN Stack Developer
+* Hero Section
+* Features Section
+* Product Collection
+* Responsive Navigation
+* Animated UI Elements
