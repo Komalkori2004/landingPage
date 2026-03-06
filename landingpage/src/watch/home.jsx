@@ -2,7 +2,7 @@
 import Landing from './hero'
 import Features from './feature'
 import Product from './product'
-// import Table from "./table"
+import Table from "./table"
 // import Reviews from "./review"
 // import WatchSlider from './slider'
 // import Closure from './closer'
@@ -13,16 +13,15 @@ const Home=()=>{
     
     
     <Landing></Landing>
-    <Features></Features>
+    <Features></Features> 
          <Product></Product>
 
-    {/* // <Features></Features>
-    // <Table></Table>
-    // <Reviews></Reviews>
-    // <WatchSlider></WatchSlider>
-    // <Closure></Closure>
-    // <Craftsmanship></Craftsmanship>
-    // <Compare></Compare> */}
+    <Table></Table>
+     {/* <Reviews></Reviews>
+     <WatchSlider></WatchSlider>
+    <Closure></Closure>
+     <Craftsmanship></Craftsmanship>
+     <Compare></Compare>  */}
     </>)
 }
 export default Home

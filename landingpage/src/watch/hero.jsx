@@ -68,7 +68,7 @@ function Landing() {
 
       {/* Right Image */}
       <div className="col-md-6 hero-image-wrapper">
-        <div className="hero-image-card">
+      <div className="hero-image-card" data-aos="zoom-in">
           <img src="/images/titan-1.webp" alt="Titan Watch" />
         </div>
         <div className="gold-glow"></div>
