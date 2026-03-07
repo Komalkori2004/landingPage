@@ -123,3 +123,44 @@ background:rgba(212,175,55,0.08) !important;
 color:#fff;
 font-weight:600;
 }
+
+/* MOBILE TABLE FIX */
+
+@media (max-width:768px){
+
+.spec-heading{
+font-size:2rem;
+}
+
+.spec-para{
+font-size:0.9rem;
+padding:0 10px;
+}
+
+/* table scroll */
+
+.table-responsive{
+overflow-x:auto;
+}
+
+/* reduce padding */
+
+.custom-table th,
+.custom-table td{
+padding:12px;
+font-size:13px;
+}
+
+/* card spacing */
+
+.table-card{
+padding:20px;
+}
+
+/* prevent overflow */
+
+.custom-table{
+min-width:600px;
+}
+
+}
