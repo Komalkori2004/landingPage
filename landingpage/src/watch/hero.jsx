@@ -1,40 +1,62 @@
 
-
+import { useState } from "react";
 import "./hero.css";
 function Landing() {
+   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      <header>
-        <div className="container d-flex justify-content-between align-items-center">
-          <div className="d-flex align-items-center gap-5">
-            <div className="logo">TITAN</div>
+  <header>
+<div className="container">
 
-            <nav className="navbar">
-              <ul className="d-flex gap-4 m-0">
-                <li>
-                  <a href="#collection">Collection</a>
-                </li>
-                <li>
-                  <a href="#features">Features</a>
-                </li>
-                <li>
-                  <a href="#product">Product</a>
-                </li>
-                <li>
-                  <a href="#reviews">Reviews</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+<nav className="navbar navbar-expand-lg">
 
-          <div className="d-flex gap-3">
-            <a href="#store" className="btn-primary">
-              Stores
-            </a>
-            <button className="btn-secondary">Buy Now</button>
-          </div>
-        </div>
-      </header>
+<div className="logo">TITAN</div>
+
+<button
+className="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav"
+>
+<span className="navbar-toggler-icon"></span>
+</button>
+
+<div className="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+<ul className="navbar-nav gap-lg-4">
+
+<li className="nav-item">
+<a className="nav-link" href="#collection">Collection</a>
+</li>
+
+<li className="nav-item">
+<a className="nav-link" href="#features">Features</a>
+</li>
+
+<li className="nav-item">
+<a className="nav-link" href="#product">Product</a>
+</li>
+
+<li className="nav-item">
+<a className="nav-link" href="#reviews">Reviews</a>
+</li>
+
+</ul>
+
+<div className="d-flex gap-3 mt-3 mt-lg-0">
+
+<a href="#store" className="btn-primary">Stores</a>
+
+<button className="btn-secondary">Buy Now</button>
+
+</div>
+
+</div>
+
+</nav>
+
+</div>
+</header>
       
     <section id="hero" className="hero-section">
   <div className="container">
