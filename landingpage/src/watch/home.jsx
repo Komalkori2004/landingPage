@@ -7,18 +7,21 @@ import Reviews from "./review";
 import Closure from './closer'
 import Craftsmanship from './Craftsmanship'
 import Compare from './compar'
+import Footer from "./footer";
 const Home = () => {
   return (
     <>
       <Landing></Landing>
       <Features></Features>
       <Product></Product>
+        <Craftsmanship></Craftsmanship>
+         <Compare></Compare> 
       <Table></Table>
       <Reviews></Reviews> 
         {/* <WatchSlider></WatchSlider> */}
    <Closure></Closure>
-     <Craftsmanship></Craftsmanship>
-      <Compare></Compare>  
+   <Footer/>
+   
     </>
   );
 };
